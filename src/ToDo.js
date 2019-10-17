@@ -29,7 +29,9 @@ const _ToDo = props => {
         break;
 
       case "ADD":
-        props.actions.action.ADD({ val: inputVal });
+        if (getCursorStyle(reduxState, inputVal) === "default") {
+          props.actions.action.ADD({ val: inputVal });
+        }
         break;
 
       default: {
