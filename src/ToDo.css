@@ -1,0 +1,10 @@
+.ToDo__table {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 10rem;
+}
+
+.ToDo__input {
+  margin: 1rem 0.5rem;
+}
